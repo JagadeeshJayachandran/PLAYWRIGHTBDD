@@ -1,0 +1,27 @@
+{
+  "name": "playwrightbddbyagent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cucumber-js features/example.feature",
+    "test:bdd": "npx cucumber-js",
+    "test:bdd:staging": "BASE_URL=https://staging.example.com npx cucumber-js",
+    "test:bdd:prod": "BASE_URL=https://production.example.com npx cucumber-js",
+    "test:bdd:tag": "npx cucumber-js --tags @smoke",
+    "test:bdd:file": "npx cucumber-js features/example.feature"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@cucumber/pretty-formatter": "^1.0.1",
+    "@playwright/test": "^1.51.1",
+    "allure-playwright": "^3.2.1",
+    "dotenv": "^16.5.0",
+    "playwright": "^1.51.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
