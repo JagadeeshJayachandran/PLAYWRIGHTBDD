@@ -1,0 +1,25 @@
+# Node
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+
+# Test results and reports
+test-results/
+playwright-report/
+allure-report/
+allure-results/
+
+# VSCode
+.vscode/
+
+# Environment
+.env
+
+# Mac system files
+.DS_Store
